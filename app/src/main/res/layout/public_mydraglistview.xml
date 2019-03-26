@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doublesoft.android.stu.myui.MyDragListView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ListView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="44dip"
+    android:background="@color/tablebackcolor"
+    android:cacheColorHint="@color/tablebackcolor"
+    android:divider="@color/darkLineColor"
+    android:dividerHeight="1px"
+    android:drawSelectorOnTop="false"
+    android:fadingEdge="none"
+    android:scrollbars="none"
+    app:dragCellHeight="60dip">
+
+</doublesoft.android.stu.myui.MyDragListView>

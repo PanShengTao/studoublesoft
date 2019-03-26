@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/UserLoginLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteColor"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="vertical"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip">
+
+            <!-- 占位 -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="124" />
+
+            <!-- 文字 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="酱酒·生产管理"
+                android:textColor="@color/darkGrayColor"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="v1.0 内测版"
+                android:textColor="@color/lightGrayColor"
+                android:textSize="12sp" />
+
+            <!-- 占位 -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="80" />
+
+            <EditText
+                android:id="@+id/UserName"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/shape_gray_r6"
+                android:gravity="center"
+                android:hint="请输入账号"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/darkGrayColor"
+                android:textColorHint="@color/lightGrayColor"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="30" />
+
+            <EditText
+                android:id="@+id/Password"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/shape_gray_r6"
+                android:gravity="center"
+                android:hint="请输入密码"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="@color/darkGrayColor"
+                android:textColorHint="@color/lightGrayColor"
+                android:textSize="15sp" />
+
+
+            <!-- 占位 -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="80" />
+
+            <!-- 登录按钮 -->
+            <Button
+                android:id="@+id/LoginButton"
+                android:layout_width="match_parent"
+                android:layout_height="44dip"
+                android:background="@drawable/selector_btn_blue_r6"
+                android:padding="5dip"
+                android:text="立即登录"
+                android:textColor="@color/whiteColor"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <!-- 占位 -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="582" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- 引入两个文件，第二个是数字键盘文件 -->
+    <include
+        layout="@layout/public_mynumkeyboard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- LoadingView控件 -->
+    <include
+        layout="@layout/public_loadingview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <!-- 提示控件 -->
+    <include
+        layout="@layout/public_drophud"
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-31dip" />
+</RelativeLayout>

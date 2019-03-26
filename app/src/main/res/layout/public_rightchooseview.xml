@@ -1,0 +1,37 @@
+<doublesoft.android.stu.myview.RightChooseView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RightChooseView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/RightChooseBgView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#000000"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/RightChooseContentView"
+        android:layout_width="120dip"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/backColor"
+        android:orientation="horizontal" >
+
+        <ListView
+            android:id="@+id/RightChooseListView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/tablebackcolor"
+            android:cacheColorHint="@color/tablebackcolor"
+            android:divider="@color/darkLineColor"
+            android:dividerHeight="1px"
+            android:fadingEdge="none" >
+        </ListView>
+    </LinearLayout>
+
+</doublesoft.android.stu.myview.RightChooseView>

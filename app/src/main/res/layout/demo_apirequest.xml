@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backColor"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <!-- 页面主视图部分 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="64dip"
+        android:orientation="vertical"
+        android:padding="10dip">
+
+        <!-- POST按钮 -->
+
+        <Button
+            android:id="@+id/DemoPostBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:background="@drawable/selector_btn_blue_r4"
+            android:text="发起POST请求"
+            android:textColor="@color/selector_btn_white"></Button>
+
+        <!-- GET按钮 -->
+
+        <Button
+            android:id="@+id/DemoGetBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/selector_btn_red_r4"
+            android:text="发起GET请求"
+            android:textColor="@color/selector_btn_white"></Button>
+
+        <!-- 请求结果 -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="请求结果:"
+            android:textColor="@color/darkGrayColor"
+            android:textSize="15sp"></TextView>
+
+        <!-- 请求结果 -->
+
+        <EditText
+            android:id="@+id/DemoResultEditText"
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_marginTop="10dip"
+            android:layout_weight="1"
+            android:background="@drawable/shape_border_darkline"
+            android:editable="false"
+            android:gravity="top|left"
+            android:padding="10dip"></EditText>
+    </LinearLayout>
+
+    <!-- 加载中 -->
+
+    <include
+        layout="@layout/public_loadingview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="64dip"
+        android:visibility="gone" />
+
+    <!-- 提示控件 -->
+
+    <include
+        layout="@layout/public_drophud"
+        android:layout_width="fill_parent"
+        android:layout_height="30dip"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="34dip" />
+
+    <!-- NavigationBar -->
+
+    <include layout="@layout/public_navigationbar" />
+
+</RelativeLayout>

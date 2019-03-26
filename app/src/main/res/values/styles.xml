@@ -1,0 +1,62 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 进出动画效果 -->
+    <style name="ThemeActivity" mce_bogus="1" parent="@android:style/Theme.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/whiteColor</item>
+    </style>
+
+    <style name="ThemeLaunch" parent="@style/ThemeActivity">
+        <item name="android:windowBackground">@drawable/public_launch_full</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="AnimationActivity" mce_bogus="1" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/public_anim_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/public_anim_exit</item>
+        <item name="android:activityCloseEnterAnimation">@anim/public_back_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/public_back_exit</item>
+    </style>
+
+    <!-- 自定义对话框 -->
+    <style name="MyDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <!-- 支付密码输入框 -->
+    <declare-styleable name="PasswordInputView">
+        <attr name="borderWidth" format="dimension" />
+        <attr name="borderColor" format="color" />
+        <attr name="borderRadius" format="dimension" />
+        <attr name="passwordLength" format="integer" />
+        <attr name="passwordWidth" format="dimension" />
+        <attr name="passwordColor" format="color" />
+        <attr name="passwordRadius" format="dimension" />
+    </declare-styleable>
+
+    <!-- 按钮状态 -->
+    <declare-styleable name="NameTextView">
+        <attr name="nameColor" format="color" />
+        <attr name="name" format="string" />
+    </declare-styleable>
+
+    <style name="meeting_btn">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textColor">#666</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!-- Title Popup -->
+    <style name="AnimHead" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/public_titlepopup_head_in</item>
+        <item name="android:windowExitAnimation">@anim/public_titlepopup_head_out</item>
+    </style>
+</resources>

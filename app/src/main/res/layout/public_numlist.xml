@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/backColor"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <!-- VierPager -->
+
+    <include
+        layout="@layout/public_pagescrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="80dip" />
+
+    <include
+        layout="@layout/public_loadingview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="44dip"
+        android:visibility="gone" />
+
+    <!-- 水平滚动栏目 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="44dip"
+        android:orientation="vertical">
+
+        <HorizontalScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="35dip"
+            android:fadingEdge="none"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent">
+
+                <include
+                    android:id="@+id/ButtonColumn_NumList"
+                    layout="@layout/public_buttoncolumn_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </HorizontalScrollView>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/blueLineColor" />
+
+    </LinearLayout>
+
+    <!-- <include
+        android:layout_width="fill_parent"
+        android:layout_height="30dip"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dip"
+        layout="@layout/public_drophud" /> -->
+
+    <include
+        layout="@layout/public_navigationbar"
+        android:layout_alignParentTop="true" />
+
+</RelativeLayout>

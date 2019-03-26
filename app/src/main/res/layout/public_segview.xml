@@ -1,0 +1,7 @@
+<doublesoft.android.stu.myview.SegView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="horizontal">
+
+</doublesoft.android.stu.myview.SegView>

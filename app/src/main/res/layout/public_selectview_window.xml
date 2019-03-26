@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dip"
+    android:paddingTop="8dip"
+    android:paddingRight="10dip"
+    android:paddingBottom="10dip">
+
+    <!-- 标题 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="3.5dip"
+            android:layout_height="14dip"
+            android:background="@color/blueColor" />
+
+        <TextView
+            android:id="@+id/SelectViewWindowTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:text="这里是标题栏"
+            android:textColor="@color/darkGrayColor"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <!-- 分割线 -->
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="8dip"
+        android:background="@color/darkLineColor" />
+
+    <!-- 内容滚动 -->
+
+    <ScrollView
+        android:id="@+id/SelectViewWindowScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:paddingTop="5dip"
+        android:paddingBottom="6dip">
+
+        <LinearLayout
+            android:id="@+id/SelectViewWindowContent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="5dip" />
+    </ScrollView>
+
+    <!-- 分割线 -->
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/darkLineColor" />
+
+    <!-- 底部按钮 -->
+
+    <Button
+        android:id="@+id/SelectViewWindowButton"
+        android:layout_width="fill_parent"
+        android:layout_height="36dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/selector_btn_blue_r4"
+        android:text="确定"
+        android:textColor="@color/whiteColor"
+        android:textSize="16sp" />
+
+</LinearLayout>

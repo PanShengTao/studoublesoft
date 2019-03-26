@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backColor"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- 横向部分 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dip"
+            android:orientation="vertical">
+
+            <doublesoft.android.stu.myview.ProgressView
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_marginTop="10dp"
+                app:pvFontSize="12"
+                app:pvHeight="5"
+                app:pvVSpace="5"
+                app:pvValue="0"
+                tools:ignore="MissingPrefix" />
+
+            <doublesoft.android.stu.myview.ProgressView
+                android:id="@+id/ProgressView2"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_marginTop="10dp"
+                app:pvFontSize="12"
+                app:pvHeight="5"
+                app:pvVSpace="5"
+                app:pvValue="30"
+                tools:ignore="MissingPrefix" />
+
+            <doublesoft.android.stu.myview.ProgressView
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_marginTop="10dp"
+                app:pvFontSize="12"
+                app:pvHeight="5"
+                app:pvVSpace="5"
+                app:pvValue="45"
+                tools:ignore="MissingPrefix" />
+
+            <doublesoft.android.stu.myview.ProgressView
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_marginTop="10dp"
+                app:pvFontSize="12"
+                app:pvHeight="5"
+                app:pvVSpace="5"
+                app:pvValue="80"
+                tools:ignore="MissingPrefix" />
+
+            <doublesoft.android.stu.myview.ProgressView
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_marginTop="10dp"
+                app:pvFontSize="12"
+                app:pvHeight="5"
+                app:pvVSpace="5"
+                app:pvValue="100"
+                tools:ignore="MissingPrefix" />
+
+            <!-- 设置值 -->
+
+            <Button
+                android:id="@+id/DemoSetProgressBtn"
+                android:layout_width="150dip"
+                android:layout_height="50dip"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/selector_btn_blue_r4"
+                android:text="设置进度值为60%"
+                android:textColor="@color/selector_btn_white" />
+        </LinearLayout>
+
+        <!-- 圆形进度条部分 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal">
+
+            <doublesoft.android.stu.myview.ProgressViewCircle
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:pvcBorderWidth="4"
+                app:pvcFontSize="12"
+                app:pvcFontSize100="12"
+                app:pvcText="A01"
+                app:pvcValue="0"
+                app:pvcWarning="true"
+                tools:ignore="MissingPrefix" />
+
+            <doublesoft.android.stu.myview.ProgressViewCircle
+                android:id="@+id/ProgressViewCircle2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                app:pvcBorderWidth="4"
+                app:pvcFontSize="12"
+                app:pvcFontSize100="12"
+                app:pvcText="A02"
+                app:pvcValue="20"
+                app:pvcWarning="false"
+                tools:ignore="MissingPrefix" />
+
+            <doublesoft.android.stu.myview.ProgressViewCircle
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                app:pvcBorderWidth="4"
+                app:pvcFontSize="12"
+                app:pvcFontSize100="12"
+                app:pvcText="A013"
+                app:pvcValue="45"
+                app:pvcWarning="false"
+                tools:ignore="MissingPrefix" />
+
+            <doublesoft.android.stu.myview.ProgressViewCircle
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                app:pvcBorderWidth="4"
+                app:pvcFontSize="12"
+                app:pvcFontSize100="12"
+                app:pvcText="A0400000000000"
+                app:pvcValue="80"
+                app:pvcWarning="false"
+                tools:ignore="MissingPrefix" />
+
+            <doublesoft.android.stu.myview.ProgressViewCircle
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                app:pvcBorderWidth="4"
+                app:pvcFontSize="12"
+                app:pvcFontSize100="12"
+                app:pvcText="A05"
+                app:pvcValue="100"
+                app:pvcWarning="false"
+                tools:ignore="MissingPrefix" />
+
+            <doublesoft.android.stu.myview.ProgressViewCircle
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                app:pvcBorderWidth="4"
+                app:pvcFontSize="12"
+                app:pvcFontSize100="12"
+                app:pvcText="A05000"
+                app:pvcValue="100"
+                app:pvcWarning="false"
+                tools:ignore="MissingPrefix" />
+
+        </LinearLayout>
+
+        <!-- 设置值 -->
+
+        <Button
+            android:id="@+id/DemoSetProgressCircleBtn"
+            android:layout_width="150dip"
+            android:layout_height="50dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/selector_btn_blue_r4"
+            android:text="设置进度值为60%"
+            android:textColor="@color/selector_btn_white" />
+    </LinearLayout>
+
+    <!-- NavigationBar -->
+
+    <include layout="@layout/public_navigationbar" />
+
+</RelativeLayout>

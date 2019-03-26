@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doublesoft.android.stu.myview.SelectView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="1px">
+
+    <TextView
+        android:id="@+id/SelectLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:paddingLeft="0dip"
+        android:paddingRight="0dip"
+        android:singleLine="true"
+        android:text="弹窗选择"
+        android:textColor="@color/darkGrayColor"
+        android:textSize="15sp" />
+
+    <View
+        android:id="@+id/SelectSplitLine"
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/SelectLabel"
+        android:background="@color/darkLineColor"
+        android:visibility="invisible" />
+
+    <doublesoft.android.stu.myui.ImageButton
+        android:id="@+id/SelectBtn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/public_select" />
+
+</doublesoft.android.stu.myview.SelectView>

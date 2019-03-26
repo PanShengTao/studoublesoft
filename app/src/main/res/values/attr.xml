@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 圆角图片 -->
+    <declare-styleable name="RoundImageView">
+        <attr name="roundWidth" format="dimension" />
+        <attr name="roundHeight" format="dimension" />
+        <attr name="drawLiftUp" format="boolean" />
+        <attr name="drawRightUp" format="boolean" />
+        <attr name="drawLiftDown" format="boolean" />
+        <attr name="drawRightDown" format="boolean" />
+    </declare-styleable>
+
+    <!-- 加载中 -->
+    <declare-styleable name="ArcView">
+        <attr name="arcStartAngle" format="float" />
+        <attr name="arcEndAngle" format="float" />
+        <attr name="arcBorderWidth" format="float" />
+        <attr name="arcBorderColor" format="color" />
+    </declare-styleable>
+
+    <!-- 拖动列表 -->
+    <declare-styleable name="DragListView">
+        <attr name="dragCellHeight" format="dimension" />
+    </declare-styleable>
+
+    <!-- 按钮TAG -->
+    <declare-styleable name="MyTag">
+        <attr name="groupTag" format="string" />
+        <attr name="userTag" format="string" />
+    </declare-styleable>
+
+    <!-- 按钮状态 -->
+    <declare-styleable name="MyState">
+        <attr name="selected" format="boolean" />
+        <attr name="disabled" format="boolean" />
+    </declare-styleable>
+
+    <!--<declare-styleable name="CircleImageView">-->
+    <!--<attr name="civ_border_width" format="dimension" />-->
+    <!--<attr name="civ_border_color" format="color" />-->
+    <!--<attr name="civ_border_overlay" format="boolean" />-->
+    <!--<attr name="civ_fill_color" format="color" />-->
+    <!--</declare-styleable>-->
+
+    <!-- 进度条 -->
+    <declare-styleable name="ProgressView">
+        <attr name="pvHeight" format="float" />
+        <attr name="pvFontSize" format="float" />
+        <attr name="pvVSpace" format="integer" />
+        <attr name="pvValue" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="ProgressViewCircle">
+        <attr name="pvcBorderWidth" format="integer" />
+        <attr name="pvcFontSize" format="float" />
+        <attr name="pvcFontSize100" format="float" />
+        <attr name="pvcText" format="string" />
+        <attr name="pvcValue" format="integer" />
+        <attr name="pvcWarning" format="boolean" />
+    </declare-styleable>
+
+</resources>

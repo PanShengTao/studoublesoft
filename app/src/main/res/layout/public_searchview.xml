@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/SearchView"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#D8D8D8"
+    android:orientation="vertical"
+    android:paddingLeft="10dip"
+    android:paddingTop="10dip"
+    android:paddingRight="10dip"
+    android:paddingBottom="10dip">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dip"
+        android:background="@drawable/shape_white_r15"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dip"
+        android:paddingRight="10dip">
+
+        <EditText
+            android:id="@+id/Search_EditText"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:hint="请输入关键字查询"
+            android:inputType="none"
+            android:singleLine="true"
+            android:textColor="@color/lightGrayColor"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="20dip"
+            android:background="#DBDBDB" />
+
+        <doublesoft.android.stu.myui.ImageButton
+            android:id="@+id/Search_Btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/btn_search"
+            tools:ignore="RtlHardcoded" />
+    </LinearLayout>
+
+</LinearLayout>

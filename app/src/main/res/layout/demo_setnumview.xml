@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backColor"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <!-- 页面主视图部分 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dip"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center" >
+
+            <!-- 引入两个文件，第一个是SetNumview本身的布局文件 -->
+
+            <include
+                android:id="@+id/SetNumView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/public_setnumview" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/DemoBtnSetNum"
+                android:layout_width="100dip"
+                android:layout_height="40dip"
+                android:background="@drawable/selector_btn_blue_r4"
+                android:text="设置新值"
+                android:textColor="@color/selector_btn_white" >
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 引入两个文件，第二个是数字键盘文件 -->
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/public_mynumkeyboard" />
+
+    <!-- NavigationBar -->
+
+    <include layout="@layout/public_navigationbar" />
+
+</RelativeLayout>

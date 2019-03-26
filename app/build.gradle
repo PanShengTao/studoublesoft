@@ -1,0 +1,70 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '28.0.3'
+    defaultConfig {
+        applicationId "doublesoft.android.stu"
+        minSdkVersion 19
+        targetSdkVersion 21
+        versionCode 2
+        versionName "2.0"
+
+        // Specifies the ABI configurations of your native
+        // libraries Gradle should build and package with your APK.
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a", "x86", "mips"
+        }
+    }
+
+    sourceSets.main {
+        jniLibs.srcDirs = ['libs'] // <-- Set your folder here!
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    aaptOptions {
+        cruncherEnabled = false
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "doublesoft${variant.versionCode}.apk"
+            // 如果有渠道，显示渠道名""
+//                if (variant.flavorName!=""){
+//                    outputFileName = outputFileName + "-${variant.flavorName}"
+//                }
+//                // 加入打包时间
+//                outputFileName = outputFileName + "-${releaseTime()}"
+//                // 如果是debug版本，加入beta版本号
+//                if ('debug'.equals(variant.buildType.name)) {
+//                    outputFileName = outputFileName + "-${build_number}.apk"
+//                } else {
+//                    // 如果是release版本，直接显示
+//                    outputFileName = outputFileName + "-release.apk"
+//                }
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:support-v4:25.4.0'
+    implementation 'androidx.exifinterface:exifinterface:1.0.0'
+    implementation 'com.android.support:appcompat-v7:25.4.0'
+    implementation 'com.belerweb:pinyin4j:2.5.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.10.0'
+    implementation 'com.squareup.okio:okio:1.14.1'
+    implementation 'com.lzy.net:okgo:2.1.4'
+    implementation 'com.google.zxing:core:3.3.0'
+}

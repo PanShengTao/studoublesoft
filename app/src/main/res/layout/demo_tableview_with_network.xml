@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backColor"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <!-- mytableview控件，包含下拉刷新和ListView -->
+    <include
+        layout="@layout/public_mytableview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="64dip" />
+
+    <!-- LoadingView控件 -->
+    <include
+        layout="@layout/public_loadingview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="64dip"
+        android:visibility="gone" />
+
+    <!-- 提示控件 -->
+    <include
+        layout="@layout/public_drophud"
+        android:layout_width="match_parent"
+        android:layout_height="30dip"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="34dip" />
+
+    <!-- NavigationBar -->
+    <include layout="@layout/public_navigationbar" />
+
+</RelativeLayout>

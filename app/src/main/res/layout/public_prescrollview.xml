@@ -1,0 +1,18 @@
+<doublesoft.android.stu.myview.PreScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clipChildren="false">
+
+    <FrameLayout
+        android:id="@+id/scroll_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <doublesoft.android.stu.myui.MyViewPager
+        android:id="@+id/ViewPager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clipToPadding="false" />
+
+</doublesoft.android.stu.myview.PreScrollView>

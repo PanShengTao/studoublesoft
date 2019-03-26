@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="48dip"
+    android:background="@color/blueColor" >
+
+    <TextView
+        android:id="@+id/CellTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="2dip"
+        android:layout_toRightOf="@+id/CellIcon"
+        android:paddingLeft="10dip"
+        android:textColor="@color/whiteColor"
+        android:textSize="15sp" >
+    </TextView>
+
+    <!-- 分割线 -->
+
+    <ImageView
+        android:id="@+id/CellSplitLine"
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/darkline" >
+    </ImageView>
+
+</RelativeLayout>

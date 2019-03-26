@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?><!-- 字符键盘 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mynumkeyboard_view_typestring"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eeeeee"
+    android:baselineAligned="false"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <View
+        android:id="@+id/PopChooseViewLine2"
+        android:layout_width="fill_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/public_mynumkeyboard_topbg" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/mynumkeyboard_view_btn1"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/public_selector_mynumkeyboard_num"
+                    android:text="1"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/mynumkeyboard_view_btn2"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="2.5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/public_selector_mynumkeyboard_num"
+                    android:text="2"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/mynumkeyboard_view_btn3"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="2.5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/public_selector_mynumkeyboard_num"
+                    android:text="3"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/mynumkeyboard_view_btn4"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/public_selector_mynumkeyboard_num"
+                    android:text="4"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/mynumkeyboard_view_btn5"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="2.5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/public_selector_mynumkeyboard_num"
+                    android:text="5"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/mynumkeyboard_view_btn6"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="2.5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/public_selector_mynumkeyboard_num"
+                    android:text="6"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/mynumkeyboard_view_btn7"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/public_selector_mynumkeyboard_num"
+                    android:text="7"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/mynumkeyboard_view_btn8"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="2.5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/public_selector_mynumkeyboard_num"
+                    android:text="8"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/mynumkeyboard_view_btn9"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="2.5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/public_selector_mynumkeyboard_num"
+                    android:text="9"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/mynumkeyboard_view_btn91"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/public_selector_mynumkeyboard_img"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/public_mynumkeyboard_hide" />
+
+                <Button
+                    android:id="@+id/mynumkeyboard_view_btn0"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="2.5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/public_selector_mynumkeyboard_num"
+                    android:text="0"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/mynumkeyboard_view_btn96"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="2.5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/public_selector_mynumkeyboard_img"
+                    android:text="换行"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2.5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/mynumkeyboard_view_btn92"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/public_selector_mynumkeyboard_img"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/public_mynumkeyboard_backspace" />
+
+            <Button
+                android:id="@+id/mynumkeyboard_view_btn95"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/public_selector_mynumkeyboard_img"
+                android:text=","
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/mynumkeyboard_view_btn97"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/public_selector_mynumkeyboard_img"
+                android:text="+"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/mynumkeyboard_view_btn93"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/public_selector_mynumkeyboard_ok"
+                android:text="确定"
+                android:textColor="@color/mynumkeyboard_btnclick_ok"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

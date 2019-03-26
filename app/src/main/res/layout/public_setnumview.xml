@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doublesoft.android.stu.myview.SetNumView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="50dip"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/SetNumViewSubBtn"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:background="@drawable/public_selector_setnumview_btn_sub" />
+
+    <doublesoft.android.stu.myview.MyNumEditText
+        android:id="@+id/SetNumViewEditText"
+        android:layout_width="40dip"
+        android:layout_height="match_parent"
+        android:background="@color/whiteColor"
+        android:gravity="center_horizontal|center_vertical"
+        android:inputType="number"
+        android:text="0"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/SetNumViewAddBtn"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:background="@drawable/public_selector_setnumview_btn_add" />
+
+</doublesoft.android.stu.myview.SetNumView>

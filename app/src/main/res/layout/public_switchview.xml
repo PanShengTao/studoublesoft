@@ -1,0 +1,22 @@
+<doublesoft.android.stu.myview.SwitchView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/SwitchViewContent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ImageView
+        android:id="@+id/SwitchViewImageView"
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:background="#23B2CE" />
+
+    <LinearLayout
+        android:id="@+id/SwitchViewLinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" />
+
+</doublesoft.android.stu.myview.SwitchView>

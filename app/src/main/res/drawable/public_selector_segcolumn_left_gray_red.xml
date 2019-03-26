@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/public_shape_segcolumn_left_red" android:state_pressed="true" android:state_selected="true"/>
+    <item android:drawable="@drawable/public_shape_segcolumn_left_red" android:state_pressed="true"/>
+    <item android:drawable="@drawable/public_shape_segcolumn_left_red" android:state_selected="true"/>
+    <item android:drawable="@drawable/public_segcolumn_left_gray"/>
+
+</selector>

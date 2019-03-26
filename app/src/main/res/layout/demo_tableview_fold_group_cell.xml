@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dip"
+    android:background="@drawable/public_cell_bg"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip" >
+
+    <TextView
+        android:id="@+id/GroupTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="@color/darkGrayColor"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- 展开关闭标识 -->
+
+    <Button
+        android:id="@+id/GroupFoldBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:clickable="false"
+        android:drawableRight="@drawable/fold_open"
+        android:focusable="false"
+        android:text="展开" >
+    </Button>
+
+    <!-- 分割线 -->
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/darkLineColor" >
+    </View>
+
+</RelativeLayout>

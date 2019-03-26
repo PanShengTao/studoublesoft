@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_enabled="true" android:state_pressed="true"><bitmap android:alpha="0.5" android:src="@drawable/public_setnum_add_normal" />
+    </item>
+    <item android:state_enabled="true" android:state_focused="true"><bitmap android:alpha="0.5" android:src="@drawable/public_setnum_add_normal" />
+    </item>
+    <item android:state_enabled="true" android:state_selected="true"><bitmap android:alpha="0.5" android:src="@drawable/public_setnum_add_normal" />
+    </item>
+    <item android:state_enabled="false"><bitmap android:alpha="0.5" android:src="@drawable/public_setnum_add_disabled" />
+    </item>
+    <item android:state_enabled="true"><bitmap android:src="@drawable/public_setnum_add_normal" />
+    </item>
+
+</selector>

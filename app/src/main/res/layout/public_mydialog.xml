@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:minWidth="280dip"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/MyDialogTitleLinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/public_shape_mydialog_title"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="15dip"
+        android:paddingEnd="0dp">
+
+        <TextView
+            android:id="@+id/MyDialogTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/whiteColor"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/MyDialogContentLinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whiteColor"
+        android:gravity="center"
+        android:minHeight="76dip"
+        android:orientation="vertical"
+        android:padding="15dip">
+
+        <TextView
+            android:id="@+id/MyDialogMessage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/darkGrayColor"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/darkLineColor" />
+
+    <LinearLayout
+        android:id="@+id/MyDialogButtonLinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/public_shape_mydialog_button"
+        android:gravity="end|center_vertical"
+        android:orientation="horizontal"
+        android:paddingEnd="20dip">
+
+        <Button
+            android:id="@+id/MyDialogNegativeButton"
+            android:layout_width="50dip"
+            android:layout_height="fill_parent"
+            android:background="@color/transparent"
+            android:singleLine="true"
+            android:textColor="@color/selector_btn_darkgray_black"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/MyDialogPositiveButton"
+            android:layout_width="50dip"
+            android:layout_height="fill_parent"
+            android:layout_marginStart="10dip"
+            android:background="@color/transparent"
+            android:singleLine="true"
+            android:textColor="@color/selector_btn_blue"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

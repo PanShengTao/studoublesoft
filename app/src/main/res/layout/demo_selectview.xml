@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backColor"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <!-- 页面主视图部分 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dip"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- 引入两个文件，第一个是SelectView本身的布局文件 -->
+
+            <include
+                android:id="@+id/SelectView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/public_selectview"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/DemoBtnReload"
+                android:layout_width="0dip"
+                android:layout_height="40dip"
+                android:layout_weight="1"
+                android:background="@drawable/selector_btn_blue_r4"
+                android:text="重设选项"
+                android:textColor="@color/selector_btn_white" >
+            </Button>
+
+            <Button
+                android:id="@+id/DemoBtnChoose"
+                android:layout_width="0dip"
+                android:layout_height="40dip"
+                android:layout_marginLeft="10dip"
+                android:layout_weight="1"
+                android:background="@drawable/selector_btn_red_r4"
+                android:text="选中选项"
+                android:textColor="@color/selector_btn_white" >
+            </Button>
+
+            <Button
+                android:id="@+id/DemoBtnClearChoose"
+                android:layout_width="0dip"
+                android:layout_height="40dip"
+                android:layout_marginLeft="10dip"
+                android:layout_weight="1"
+                android:background="@drawable/selector_btn_blue_r4"
+                android:text="清空选项"
+                android:textColor="@color/selector_btn_white" >
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 引入两个文件，第二个是SelectView弹出对话框的布局文件 -->
+
+    <include
+        android:id="@+id/PopView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="64dip"
+        layout="@layout/public_selectview_popview"
+        android:visibility="invisible" />
+
+    <!-- NavigationBar -->
+
+    <include layout="@layout/public_navigationbar" />
+
+</RelativeLayout>

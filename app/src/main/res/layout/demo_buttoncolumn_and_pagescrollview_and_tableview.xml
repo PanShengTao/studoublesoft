@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backColor"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <!-- 横向滚动部分 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="41dip"
+        android:layout_marginTop="64dip"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/ButtonColumnHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/public_buttoncolumn_horizontal" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:background="@color/darkLineColor" >
+        </View>
+    </LinearLayout>
+
+    <!-- PageScrollView -->
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="105dip"
+        layout="@layout/public_pagescrollview" />
+
+    <!-- LoadingView控件 -->
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="64dip"
+        layout="@layout/public_loadingview"
+        android:visibility="gone" />
+
+    <!-- 提示控件 -->
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="30dip"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="34dip"
+        layout="@layout/public_drophud" />
+
+    <!-- NavigationBar -->
+
+    <include layout="@layout/public_navigationbar" />
+
+</RelativeLayout>

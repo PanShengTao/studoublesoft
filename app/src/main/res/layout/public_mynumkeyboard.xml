@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doublesoft.android.stu.myview.MyNumKeyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mynumkeyboard"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:visibility="gone">
+
+    <!-- 小数点键盘 -->
+    <RelativeLayout
+        android:id="@+id/mynumkeyboard_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#00000000">
+
+        <include
+            layout="@layout/public_mynumkeyboard_point"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+
+
+    </RelativeLayout>
+
+</doublesoft.android.stu.myview.MyNumKeyboard>
